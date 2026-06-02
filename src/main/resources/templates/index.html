@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: body">
+<body>
+<section class="hero">
+  <h1>Moe Kyaw Aung</h1>
+  <p>Android Senior Developer | Kotlin | Jetpack Compose | Firebase</p>
+</section>
+
+<section class="projects">
+  <h2>Featured Projects</h2>
+  <div class="grid">
+    <article th:each="project : ${projects}">
+      <img th:src="${project.imageUrl}" th:alt="${project.title}">
+      <h3 th:text="${project.title}"></h3>
+      <p th:text="${project.description}"></p>
+    </article>
+  </div>
+</section>
+</body>
+</html>
