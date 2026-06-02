@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: body">
+<body>
+<section>
+  <h1>Contact</h1>
+
+  <ul th:if="${errors != null}">
+    <li th:each="err : ${errors}" th:text="${err}"></li>
+  </ul>
+
+  <form method="post" action="/contact">
+    <input name="name" placeholder="Name">
+    <input name="email" placeholder="Email">
+    <textarea name="message" placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+</body>
+</html>
