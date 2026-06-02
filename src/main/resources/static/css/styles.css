@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ebf4dd;
+  color: #3b4953;
+}
+.nav {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: rgba(255,255,255,.2);
+}
+.footer {
+  padding: 24px;
+  text-align: center;
+}
+.hero {
+  padding: 80px 24px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 24px;
+}
+article {
+  background: rgba(255,255,255,.3);
+  border-radius: 20px;
+  padding: 16px;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
